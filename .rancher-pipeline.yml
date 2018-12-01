@@ -9,7 +9,7 @@ stages:
     env:
       NEXUS_HOST: http://sonatype-nexus-service.sonatype-nexus:8081
     envFrom:
-    - sourceName: nexus-key
+    - sourceName: registry-crt
       sourceKey: token
       targetKey: NEXUS_TOKEN
 - name: Publish
